@@ -1,0 +1,1 @@
+Icons in this folder are currently unused.

@@ -7,13 +7,12 @@
 
 # THANKS
 
-    To the React Static Boilerplate team
+    To the React Static Boilerplate team and iconfinder for the car icon used in the logo and also as the favicon
 
 # TECHNOLOGY COLOPHON
 
-    JavaScript, HTML5, CSS3
-    React, Redux, Material Design Lite (MDL)
+    JavaScript, HTML5, CSS3, ES6
+    React, Bootstrap
     Babel, Webpack, Node.js
     React Static Boilerplate
     Gaming
-

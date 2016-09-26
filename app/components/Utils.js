@@ -1,4 +1,12 @@
 /**
+ * This source code is licensed under the GNU LGPLv3 license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ *
+ * Copyright © 2016-present Balazs Sarvari. All rights reserved.
+ * https://github.com/bsarvari/garage
+ */
+
+/**
  * An interface to a persistent store backed either by localStorage or cookies if the former one is not supported.
  * TODO cookie backed storage
  */
