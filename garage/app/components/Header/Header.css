@@ -1,0 +1,25 @@
+/**
+* This source code is licensed under the MIT license found in the
+* LICENSE.txt file in the root directory of this source tree.
+*/
+
+.headerItemIcon {
+  margin-right: 0.4em;
+  position: relative;
+  top: 2px
+}
+
+.brand {
+  color: #3F51B5 !important; /*A hack */
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.logo {
+  background: url("./logo-blue.svg") no-repeat;
+  padding: 8px 19px 9px;
+}
+
+.navbar-default .navbar-brand {
+  color: #3F51B5;
+}
