@@ -1,0 +1,14 @@
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 42px;
+  background-color: #f5f5f5;
+}
+
+.footerText {
+  margin: 12px 0;
+  font-size: .95em;
+}

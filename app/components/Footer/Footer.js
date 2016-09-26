@@ -7,15 +7,13 @@
  */
 
 import React from 'react';
+import styles from './Footer.css';
 
 function Footer() {
-  const footerStyle = {
-    margin: '20px 0'
-  };
   return (
-    <footer className="footer">
+    <footer className={`${styles.footer}`}>
       <div className="container">
-        <p className="text-muted" style={footerStyle}>Made with <span style={{color: '#C70505'}}>♥</span> by Balazs Sarvari</p>
+        <p className={`text-muted ${styles.footerText}`} >Made with <span style={{color: '#C70505'}}>♥</span> by Balazs Sarvari</p>
       </div>
     </footer>
   );

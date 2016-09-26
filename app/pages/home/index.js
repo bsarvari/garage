@@ -15,6 +15,7 @@ import Dialog from '../../components/Dialog';
 import Dispatcher from '../../events/Dispatcher';
 import Utils from '../../components/Utils';
 import {Alert, Glyphicon} from 'react-bootstrap';
+import styles from './styles.css';
 
 export default class GarageApp extends React.Component { // TODO move it to components
   constructor(){
@@ -133,10 +134,10 @@ export default class GarageApp extends React.Component { // TODO move it to comp
     } else if(this.state.inBoardGarage){
       content =
         <div className="panel panel-info">
-          <div className="panel-heading">Unblock the yellow car and move it to the exit
-            <span className="badge" style={{float: 'right'}}>{this.state.gameId}</span>
+          <div className={`panel-heading ${styles.inBoardHeading}`}>Unblock the yellow car and move it to the exit
+            <span className={`badge ${styles.inBoardGameId}`}>{this.state.gameId}</span>
           </div>
-          <div className="panel-body" style={{position: 'relative'}}>
+          <div className={`panel-body ${styles.inBoardPanel}`}>
             <DndAwareGarageView garageModel={this.state.inBoardGarage}/>
           </div>
         </div>;

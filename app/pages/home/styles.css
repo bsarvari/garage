@@ -1,15 +1,25 @@
-/**
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-.goal {
-  margin-bottom: 40px; /*TODO use media queries*/
+
+.inBoardGameId {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: .8em;
 }
 
-@media screen and (max-width: 1024px) {
+.inBoardPanel {
+  position: relative;
+}
 
-  .content {
-    padding: 0 16px;
+.inBoardHeading {
+  position: relative;
+  padding-right: 35px;
+  font-size: .9em;
+}
+
+@media (max-width: 332px) {
+  /* To avoid the garage from sticking out on the right side*/
+  .inBoardPanel {
+    padding-left: 0;
+    padding-right: 0;
   }
-
 }
