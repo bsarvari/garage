@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+programming-excercises/temprature_math.js
+*.iml
+*.bak
+*.bak.*
+notes
+build
+node_modules
+ncp-debug.log
+npm-debug.log
+
+# Compiled output
+app/public/dist
+app/public/index.html
+app/public/sitemap.xml
+app/.travis.yml
+app/docs
