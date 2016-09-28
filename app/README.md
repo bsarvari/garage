@@ -9,7 +9,7 @@ To download all the required npm packages run `npm install` in the `app` folder.
 ### Daily Life
 Do `npm start` to serve the app locally and watch the source files for automatic browser synchronization.
  
-To publish the latest garage on firebase.google.com run `npm run publish`.
+To publish the latest garage on https://firebase.google.com/ run `npm run publish`.
 
 To run the unit tests: `npm run test`
  
