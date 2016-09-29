@@ -8,6 +8,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import DraggableCar from './DraggableCar';
@@ -205,6 +206,13 @@ class DndAwareGarageView extends React.Component {
       return (
         <div tabIndex="0" onKeyDown={this.handleKeyDown} style={{outlineStyle: 'none'}}>
           {garageModel.gameOver && this._renderGameOverMessage()} {/*placing it here and not in garage wrap to make sure the message's width is not constrained to the garage's width*/}
+          <ReactCSSTransitionGroup
+            transitionName={{appear: `${styles.appear}`, appearActive: `${styles.appearActive}`}}
+            transitionAppear={true}
+            transitionAppearTimeout={200}
+            transitionLeaveTimeout={200}
+            transitionEnterTimeout={200}>
+
           <div className={styles.garageWrap}>
             <div className={styles.root}>
               {cells}
@@ -213,6 +221,7 @@ class DndAwareGarageView extends React.Component {
               {this._renderDropPreview()}
             </div>
           </div>
+          </ReactCSSTransitionGroup>
         </div>
       );
   }

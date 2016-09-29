@@ -6,6 +6,24 @@
  * https://github.com/bsarvari/garage
  */
 
+.celledGarage {
+  /* Takes effect when the width of the bootstrap grid columns changes upon reaching media query breakpoints */
+  transition: width .4s ease-in;
+}
+
+/* Style used by react animation utility */
+.appear {
+  opacity: 0.5;
+  transform: scale(0.8)
+}
+
+/* Style used by react animation utility */
+.appearActive {} /* This is important to make ReactCSSTransitionGroup work with CSS modules */
+.appear.appearActive {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity .2s ease-in, transform .2s; /* times must match the timeout props of ReactCSSTransitionGroup */
+}
 
 @media (min-width: 1200px) {
   .celledGarage {

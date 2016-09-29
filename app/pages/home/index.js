@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import DndAwareGarageView from '../../components/Garage/DndAwareGarageView';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -129,11 +130,11 @@ export default class GarageApp extends React.Component { // TODO move it to comp
       showBackToGame = this.state.showGameSelector && this.state.inBoardGarage;
 
     if(this.state.showGameSelector){
-      content = <GameSelector solvedGameIds={this.state.solvedGameIds}/>;
+      content = <GameSelector solvedGameIds={this.state.solvedGameIds} key="gameSelector"/>;
       
     } else if(this.state.inBoardGarage){
       content =
-        <div className="panel panel-info">
+        <div className="panel panel-info" key="dndGarageView">
           <div className={`panel-heading ${styles.inBoardHeading}`}>Unblock the yellow car and move it to the exit
             <span className={`badge ${styles.inBoardGameId}`}>{this.state.gameId}</span>
           </div>
@@ -144,7 +145,7 @@ export default class GarageApp extends React.Component { // TODO move it to comp
       
     } else {
       content =
-      <Alert bsStyle="warning">
+      <Alert bsStyle="warning" key="noGameWarning">
         <Glyphicon glyph="exclamation-sign" style={{top: '2px', paddingRight: '.4em'}}/>
         <strong>Nothing selected.</strong>To start playing&nbsp;
         <a href='#' className='alert-link' onClick={()=>{
