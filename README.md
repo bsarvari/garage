@@ -1,3 +1,7 @@
+Garage is a logic game where the goal is to unblock and move a specific car to the exit.
+ 
+For the source code and development notes see [the app folder](https://github.com/bsarvari/garage/tree/master/app). 
+
 # Challenge
 I parked my car in a garage and left. After returning I'm unable to drive away because others parked such that they 
  blocked my way to exit.
